@@ -1,0 +1,106 @@
+@import 'partials/variables';
+@mixin center {
+	width: 80%;
+	margin: auto;
+}
+@mixin border {
+	border: 1px solid $color-secondary;
+}
+@mixin blink {
+	@keyframes blink {
+  		50% {
+    		opacity: 0;
+  		}
+  		100% {
+   			opacity: 1;
+  		}
+	}
+}
+
+body {
+	font-family: Monospace;
+	background-color: $color-primary;
+	color: $color-secondary;
+	a {
+		text-decoration: none;
+		color: $color-primary;
+	}
+}
+header {
+	@include center;
+	@include border;
+	background-image: url("../../img/header.jpg");
+	h1 {
+		margin: 1em;
+		color: $color-secondary;
+	}
+	h2 {
+		@extend h1;
+		color: gray;
+	}
+}
+
+nav {
+	@include center;
+	@include border;
+	background-color: $color-secondary;
+	ul {
+		text-align: right;
+		color: $color-primary;
+		li {
+			display: inline-block;
+			margin: 1em;
+			font-family: Monospace;
+		}
+	}
+}
+section {
+	@include center;
+	@include border;
+	ul {
+		margin: 3.5em 2em;
+		width: 20%;
+		text-align: center;
+		float: left;
+		display: inline-block;
+		li {
+			padding: 0.5em 1em;
+			a {
+				color: $color-secondary;
+				font-family: Monospace;
+				
+			}
+		}
+	}
+	.wrap {
+		width: 70%;
+		display: inline-block;
+		h1 {
+			text-align: right;
+		}
+		span {
+			height: 0.1em;
+			margin-bottom: -4px;
+			margin-left: -0.5em;
+			width: 1em;
+			background: $color-secondary;
+			opacity: 0;
+			display: inline-block;
+			animation: blink 1s linear infinite alternate;
+			@include blink;
+		}
+		
+	}
+}
+footer {
+	@include border;
+	text-align: center;
+	padding: 0.5em 0;
+
+}
+
+
+
+
+
+
