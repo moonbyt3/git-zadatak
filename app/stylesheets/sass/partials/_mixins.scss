@@ -1,0 +1,17 @@
+@mixin center {
+	width: 80%;
+	margin: auto;
+}
+@mixin border {
+	border: 1px solid $color-secondary;
+}
+@mixin blink {
+	@keyframes blink {
+  		50% {
+    		opacity: 0;
+  		}
+  		100% {
+   			opacity: 1;
+  		}
+	}
+}

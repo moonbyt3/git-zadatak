@@ -49,7 +49,7 @@ section {
     width: 70%;
     display: inline-block; }
     section .wrap h1, section .wrap header h2, header section .wrap h2 {
-      text-align: right; }
+      text-align: center; }
     section .wrap span {
       height: 0.1em;
       margin-bottom: -4px;
@@ -59,14 +59,14 @@ section {
       opacity: 0;
       display: inline-block;
       animation: blink 1s linear infinite alternate; }
+
 @keyframes blink {
   50% {
     opacity: 0; }
   100% {
     opacity: 1; } }
+
 footer {
   border: 1px solid green;
   text-align: center;
   padding: 0.5em 0; }
-
-/*# sourceMappingURL=main.css.map */

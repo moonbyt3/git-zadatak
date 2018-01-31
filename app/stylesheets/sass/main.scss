@@ -1,21 +1,6 @@
 @import 'partials/variables';
-@mixin center {
-	width: 80%;
-	margin: auto;
-}
-@mixin border {
-	border: 1px solid $color-secondary;
-}
-@mixin blink {
-	@keyframes blink {
-  		50% {
-    		opacity: 0;
-  		}
-  		100% {
-   			opacity: 1;
-  		}
-	}
-}
+@import 'partials/mixins';
+
 
 body {
 	font-family: Monospace;
@@ -76,7 +61,7 @@ section {
 		width: 70%;
 		display: inline-block;
 		h1 {
-			text-align: right;
+			text-align: center;
 		}
 		span {
 			height: 0.1em;
