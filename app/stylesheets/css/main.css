@@ -5,6 +5,8 @@ body {
   body a {
     text-decoration: none;
     color: black; }
+    body a:hover {
+      color: whitesmoke; }
 
 header {
   width: 80%;
@@ -65,6 +67,12 @@ section {
     opacity: 0; }
   100% {
     opacity: 1; } }
+    section .wrap p {
+      text-align: justify; }
+  section .ascii-img p {
+    text-align: center;
+    position: relative;
+    right: 0; }
 
 footer {
   border: 1px solid green;
